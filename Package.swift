@@ -1,4 +1,4 @@
-// swift-tools-version: 5.9
+// swift-tools-version: 6.0
 
 import PackageDescription
 
@@ -14,7 +14,7 @@ let package = Package(
             targets: ["BCRandom"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/WolfMcNally/WolfBase", from: "6.0.0")
+        .package(url: "https://github.com/WolfMcNally/WolfBase", from: "7.0.0")
     ],
     targets: [
         .target(

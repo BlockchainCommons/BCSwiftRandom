@@ -1,10 +1,10 @@
 import Foundation
 import Security
 
-public final class SecureRandomNumberGenerator: RandomNumberGenerator {
+public final class SecureRandomNumberGenerator: RandomNumberGenerator, Sendable {
     public init() { }
 
-    public static var shared = SecureRandomNumberGenerator()
+    public static let shared = SecureRandomNumberGenerator()
 
     public func next() -> UInt64 {
         var result: UInt64 = 0
